@@ -29,4 +29,10 @@ export default function Salesforce<P extends SalesforceProfile>(
     checks: ["none"],
     options,
   }
+  providers: [
+  SalesforceProvider({
+    clientId: process.env.3MVG9l2zHsylwlpRQrFC86q7kioG8GkwDsrx1VtmJLoCCoI0VTf5A7VMlMtMVbp.y6lPXhubUppOzO9ES0ExN,
+    clientSecret: process.env.B69EDC2D02A67BEFC2534F1DE90EABE47D430F8AB211B71E1395DD8A1EBAA955,
+  })
+]
 }
